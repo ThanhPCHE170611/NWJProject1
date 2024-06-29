@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\NWJProject1\NWJProject1\NWJProject1\App.xaml
-11407045341
+3-856625592
 
-7-1318174570
+15974333778
 220-373403591
-MainWindow.xaml;
+MainWindow.xaml;Views\AddUser.xaml;Views\UserHomePage.xaml;
 
 False
 
