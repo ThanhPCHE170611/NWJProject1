@@ -69,3 +69,5 @@ D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\GeneratedInterna
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\UserControls\UserFormUC.baml
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\DeleteUser.g.cs
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\DeleteUser.baml
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\UpdateUser.g.cs
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\UpdateUser.baml

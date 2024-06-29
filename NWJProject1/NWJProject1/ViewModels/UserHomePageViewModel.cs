@@ -15,12 +15,14 @@ namespace NWJProject1.ViewModels
         public UserDTO SelectedUser { get; set; }
         public ICommand ShowWindowCommand { get; set; }
         public ICommand ShowDeleteWCommand { get; set; }
+        public ICommand ShowUpdateWCommand { get; set; }
 
         public UserHomePageViewModel()
         {
             Users = UserManager.GetAllUsers();
             ShowWindowCommand = new RelayCommand(ShowAddWindow, CanShowWindow);
             ShowDeleteWCommand = new RelayCommand(ShowDeleteWindow, CanShowWindow);
+            ShowUpdateWCommand = new RelayCommand(ShowUpdateWindow, CanShowWindow);
         }
 
         private void ShowDeleteWindow(object obj)
@@ -60,6 +62,27 @@ namespace NWJProject1.ViewModels
             parrentWindow.Opacity = 0.4;
             addUserWin.ShowDialog();
             parrentWindow.Opacity = 1;
+        }
+        private void ShowUpdateWindow(object obj)
+        {
+            //check if selected any User?
+            if (SelectedUser != null)
+            {
+                //yse => redirect to delete window and show realte information 
+                var parrentWindow = obj as Window;
+
+                UpdateUser updateUserWin = new UpdateUser(SelectedUser);
+                updateUserWin.Owner = parrentWindow;
+                updateUserWin.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                parrentWindow.Opacity = 0.4;
+                updateUserWin.ShowDialog();
+                parrentWindow.Opacity = 1;
+            }
+            else
+            {
+                //no => Show message box that must selected one User
+                MessageBox.Show("Must selected User to use this future", "Alert!", MessageBoxButton.OK);
+            }
         }
     }
 }

@@ -76,5 +76,50 @@ namespace NWJProject1.Models
                 MessageBox.Show(ex.Message, "Error");
             }
         }
+        public static void UpdateUser(UserDTO user)
+        {
+            try
+            {
+                User userInDb = context.Users.FirstOrDefault(x => x.UserId == user.UserId);
+
+                //Update list
+                UserDTO userInList = Users.FirstOrDefault(x => x.UserId == user.UserId);
+                if (userInList != null)
+                {
+                    userInList.FullName = user.FullName;
+                    userInList.Gender = user.Gender;
+                    userInList.Address = user.Address;
+                    userInList.PhoneNumber = user.PhoneNumber;
+                    userInList.Status = user.Status;
+                    userInList.GroupId = user.GroupId;
+                    userInList.GroupName = user.GroupName;
+                }
+                if (userInDb != null)
+                {
+                    // update In Db:
+                    userInDb.FullName = user.FullName;
+                    userInDb.Gender = (user.Gender.Equals("Male") ? true : false);
+                    userInDb.Address = user.Address;
+                    userInDb.PhoneNumber = user.PhoneNumber;
+                    userInDb.Status = user.Status;
+                    userInDb.GroupId = user.GroupId;
+                    context.SaveChanges();
+                }
+                else
+                {
+                    userInDb = context.Users.OrderBy(x => x.UserId).LastOrDefault();
+                    userInDb.FullName = user.FullName;
+                    userInDb.Gender = (user.Gender.Equals("Male") ? true : false);
+                    userInDb.Address = user.Address;
+                    userInDb.PhoneNumber = user.PhoneNumber;
+                    userInDb.Status = user.Status;
+                    userInDb.GroupId = user.GroupId;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
+        }
     }
 }
