@@ -8,5 +8,5 @@
         mc:Ignorable="d"
         Title="AddUser" Height="450" Width="750" Background="#333333" 
         Name="addWindow" WindowStyle="ToolWindow">
-    <userfomrcs:UserFormUC ButtonContent="Add" ButtonCommand="{Binding AddUserCommand}" ButtonCommandParameter="{Binding ElementName=addWindow}"/>
+    <userfomrcs:UserFormUC ButtonContent="Add" ButtonCommand="{Binding AddUserCommand}" ButtonCommandParameter="{Binding ElementName=addWindow}" IsEditMode="True"/>
 </Window>

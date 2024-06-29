@@ -1,4 +1,6 @@
-﻿using NWJProject1.ViewModels;
+﻿using NWJProject1.DTOs;
+using NWJProject1.Models;
+using NWJProject1.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,6 +31,14 @@ namespace NWJProject1.Views
 
         private void FilterTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
+            UserList.Items.Filter = FilterMethod;
+        }
+        private bool FilterMethod(object obj)
+        {
+            var user = (UserDTO)obj;
+
+            return user.FullName.Contains(FilterTextBox.Text, StringComparison.OrdinalIgnoreCase);
+
 
         }
     }

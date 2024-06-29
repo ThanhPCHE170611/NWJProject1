@@ -26,29 +26,29 @@
         </Grid.ColumnDefinitions>
         <StackPanel Margin="10">
             <Label Content="FullName"/>
-            <TextBox Text="{Binding FullName}"/>
+            <TextBox Text="{Binding FullName}" Name="txtFullName"/>
         </StackPanel>
         <StackPanel Margin="10" Grid.Row="0" Grid.Column="1">
             <Label Content="Gender"/>
-            <ComboBox ItemsSource="{Binding Path= Genders}" SelectedValue="{Binding Gender}">
+            <ComboBox ItemsSource="{Binding Path= Genders}" SelectedValue="{Binding Gender}" Name="cbGender">
             </ComboBox>
         </StackPanel>
         <StackPanel Margin="10" Grid.Row="1" Grid.Column="0">
             <Label Content="Address"/>
-            <TextBox Text="{Binding Address}"/>
+            <TextBox Text="{Binding Address}" Name="txtAddress"/>
         </StackPanel>
         <StackPanel Margin="10" Grid.Row="1" Grid.Column="1">
             <Label Content="PhoneNumber"/>
-            <TextBox Text="{Binding PhoneNumber}"/>
+            <TextBox Text="{Binding PhoneNumber}" Name="txtPhone"/>
         </StackPanel>
         <StackPanel Margin="10" Grid.Row="2" Grid.Column="0">
             <Label Content="Status"/>
-            <TextBox Text="{Binding Status}"/>
+            <TextBox Text="{Binding Status}" Name="txtStatus"/>
         </StackPanel>
         <StackPanel Margin="10" Grid.Row="2" Grid.Column="1">
             <Label Content="Group"/>
-            <ComboBox Name="Group" ItemsSource="{Binding Path= Groups}" DisplayMemberPath="GroupName" 
-                      SelectedValue="{Binding GroupId}" SelectedValuePath="GroupId">
+            <ComboBox ItemsSource="{Binding Path= Groups}" DisplayMemberPath="GroupName" 
+                      SelectedValue="{Binding GroupId}" SelectedValuePath="GroupId" Name="cbGroup">
             </ComboBox>
         </StackPanel>
         <Button Content="{Binding ButtonContent, RelativeSource={RelativeSource AncestorType=UserControl}}"

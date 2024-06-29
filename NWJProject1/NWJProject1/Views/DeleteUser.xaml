@@ -9,6 +9,6 @@
         Title="DeleteUser" Height="450" Width="750" Background="#333333" 
         Name="deleteWindow" WindowStyle="ToolWindow">
     <Grid>
-        <userfomrcs:UserFormUC ButtonContent="Delete" ButtonCommand="{Binding DeleteUserCommand}" ButtonCommandParameter="{Binding ElementName=deleteWindow}"/>
+        <userfomrcs:UserFormUC ButtonContent="Delete" ButtonCommand="{Binding DeleteUserCommand}" ButtonCommandParameter="{Binding ElementName=deleteWindow}" IsEditMode="False"/>
     </Grid>
 </Window>
