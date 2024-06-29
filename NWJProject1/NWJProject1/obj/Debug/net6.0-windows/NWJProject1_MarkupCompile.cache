@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\NWJProject1\NWJProject1\NWJProject1\App.xaml
-3-856625592
+61621337128
 
-15974333778
+18-253449045
 220-373403591
-MainWindow.xaml;Views\AddUser.xaml;Views\UserHomePage.xaml;
+MainWindow.xaml;Views\AddUser.xaml;Views\DeleteUser.xaml;Views\Styles\FormStyle.xaml;Views\UserControls\UserFormUC.xaml;Views\UserHomePage.xaml;
 
 False
 

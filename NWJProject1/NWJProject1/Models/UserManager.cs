@@ -16,23 +16,20 @@ namespace NWJProject1.Models
 
 
 
-        public static ObservableCollection<UserDTO> Users { get; set; }
+        public static ObservableCollection<UserDTO> Users = new ObservableCollection<UserDTO>(context.Users.Include(u => u.Group).Select(x => new UserDTO
+        {
+            UserId = x.UserId,
+            FullName = x.FullName,
+            Gender = (x.Gender.Value ? "Male" : "Female"),
+            Address = x.Address,
+            PhoneNumber = x.PhoneNumber,
+            Status = x.Status,
+            GroupId = x.GroupId,
+            GroupName = x.Group.GroupName
+        }).ToList());
 
         public static ObservableCollection<UserDTO> GetAllUsers()
         {
-            var userList = context.Users.Include(u => u.Group).Select( x => new UserDTO
-            {
-                UserId = x.UserId,
-                FullName = x.FullName,
-                Gender = (x.Gender.Value? "Male" : "Female"),
-                Address = x.Address,
-                PhoneNumber = x.PhoneNumber,
-                Status = x.Status,
-                GroupId = x.GroupId,
-                GroupName = x.Group.GroupName
-            }).ToList();
-
-            Users = new ObservableCollection<UserDTO>(userList);
             return Users;
         }
         public static void AddUser(UserDTO user)
@@ -63,6 +60,12 @@ namespace NWJProject1.Models
                 User userInDb = context.Users.FirstOrDefault(x => x.UserId == user.UserId);
                 if (userInDb != null)
                 {
+                    Users.Remove(user);
+                    context.Users.Remove(userInDb);
+                    context.SaveChanges();
+                } else
+                {
+                    userInDb = context.Users.OrderBy(x => x.UserId).LastOrDefault();
                     Users.Remove(user);
                     context.Users.Remove(userInDb);
                     context.SaveChanges();

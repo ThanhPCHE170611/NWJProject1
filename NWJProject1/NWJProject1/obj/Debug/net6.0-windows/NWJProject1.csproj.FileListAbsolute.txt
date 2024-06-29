@@ -63,3 +63,9 @@ D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\ref\NWJProject1.
 D:\NWJProject1\NWJProject1\NWJProject1\bin\Debug\net6.0-windows\appsettings.json
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\AddUser.g.cs
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\AddUser.baml
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\Styles\FormStyle.baml
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\UserControls\UserFormUC.g.cs
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\UserControls\UserFormUC.baml
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\DeleteUser.g.cs
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\DeleteUser.baml

@@ -13,7 +13,6 @@ namespace NWJProject1.ViewModels
 {
     public class AddUserViewModel
     {
-        private Boolean addOne = false;
         public ICommand AddUserCommand { get; set; }
         public string? FullName { get; set; }
         public string? Gender { get; set; }

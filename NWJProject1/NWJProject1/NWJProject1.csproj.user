@@ -10,6 +10,12 @@
     <Compile Update="Views\AddUser.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\DeleteUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\UserFormUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -19,6 +25,15 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\AddUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\DeleteUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Styles\FormStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UserFormUC.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\UserHomePage.xaml">

@@ -2,12 +2,7 @@
 using NWJProject1.DTOs;
 using NWJProject1.Models;
 using NWJProject1.Views;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
@@ -34,15 +29,20 @@ namespace NWJProject1.ViewModels
             if(SelectedUser != null)
             {
                 //yse => redirect to delete window and show realte information 
+                var parrentWindow = obj as Window;
+
+                DeleteUser deleteUserWin = new DeleteUser(SelectedUser);
+                deleteUserWin.Owner = parrentWindow;
+                deleteUserWin.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                parrentWindow.Opacity = 0.4;
+                deleteUserWin.ShowDialog();
+                parrentWindow.Opacity = 1;
             }
             else
             {
+                //no => Show message box that must selected one User
                 MessageBox.Show("Must selected User to use this future","Alert!", MessageBoxButton.OK);
             }
-
-
-
-            //no => Show message box that must selected one User
         }
 
         private bool CanShowWindow(object obj)
