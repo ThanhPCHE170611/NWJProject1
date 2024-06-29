@@ -21,10 +21,10 @@
                     Foreground="#EEEEEE"/>
             <Button Background="Transparent" Height="30" Content="Delete User" Padding="5" 
                     BorderThickness="1" BorderBrush="#E0E0E0" 
-                    Foreground="#EEEEEE" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,25,166,0" 
-                    />
+                    Foreground="#EEEEEE" Width="100" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,25,147,0" 
+                    Command="{Binding ShowDeleteWCommand}"/>
             <ListView Name="UserList" ItemsSource="{Binding Users}" BorderBrush="#cdcdcd" Margin="25,70,25,25" Padding="0" 
-                      Background="Transparent" Foreground="#EEEEEE">
+                      Background="Transparent" Foreground="#EEEEEE" SelectedItem="{Binding SelectedUser}">
                 <ListView.View>
                     <GridView >
                         <GridViewColumn Header="FullName"   DisplayMemberBinding="{Binding FullName}"/>

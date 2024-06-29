@@ -55,7 +55,23 @@ namespace NWJProject1.Models
             {
                 MessageBox.Show(ex.Message, "Error");
             }
-           
+        }
+        public static void DeleteUser(UserDTO user)
+        {
+            try
+            {
+                User userInDb = context.Users.FirstOrDefault(x => x.UserId == user.UserId);
+                if (userInDb != null)
+                {
+                    Users.Remove(user);
+                    context.Users.Remove(userInDb);
+                    context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
         }
     }
 }
