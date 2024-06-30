@@ -48,3 +48,4 @@ WHERE DBId = DB_ID(@DatabaseName) AND SPId <> @@SPId
 --SELECT @SQL 
 EXEC(@SQL) */
 select * from Users
+select * from UserGroup
