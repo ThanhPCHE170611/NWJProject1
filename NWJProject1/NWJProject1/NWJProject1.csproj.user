@@ -16,6 +16,9 @@
     <Compile Update="Views\GroupViews\GroupHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\GroupViews\UpdateGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Views\UserControls\GroupFormUC.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -46,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\GroupViews\GroupHomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GroupViews\UpdateGroup.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Views\Styles\HomePageStyle.xaml">

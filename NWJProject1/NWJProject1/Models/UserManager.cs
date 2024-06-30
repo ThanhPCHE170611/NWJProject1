@@ -125,22 +125,5 @@ namespace NWJProject1.Models
                 MessageBox.Show(ex.Message, "Error");
             }
         }
-        public static void deleteRangeUser(ICollection<User> users)
-        {
-            foreach(var user in users.Select(user => new UserDTO
-            {
-                FullName = user.FullName,
-                Gender = (user.Gender == true ? "Male": "Female"),
-                Address = user.Address,
-                PhoneNumber = user.PhoneNumber,
-                Status = user.Status,
-                GroupId = user.GroupId,
-            }))
-            {
-                Users.Remove(user);
-            }
-            context.RemoveRange(users);
-            context.SaveChanges();
-        }
     }
 }

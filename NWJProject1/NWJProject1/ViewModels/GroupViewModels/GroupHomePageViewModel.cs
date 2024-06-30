@@ -20,7 +20,28 @@ namespace NWJProject1.ViewModels.GroupViewModels
             Groups = GroupManager.GetAllGroups();
             ShowWindowCommand = new RelayCommand(ShowAddWindow, CanShowWindow);
             ShowDeleteWCommand = new RelayCommand(ShowDeleteWindow, CanShowWindow);
-            //ShowUpdateWCommand = new RelayCommand(ShowUpdateWindow, CanShowWindow);
+            ShowUpdateWCommand = new RelayCommand(ShowUpdateWindow, CanShowWindow);
+        }
+
+        private void ShowUpdateWindow(object obj)
+        {
+            if (SelectedGroup != null)
+            {
+                //yse => redirect to delete window and show realte information 
+                var parrentWindow = obj as Window;
+
+                UpdateGroup updateGroup = new UpdateGroup(SelectedGroup);
+                updateGroup.Owner = parrentWindow;
+                updateGroup.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+                parrentWindow.Opacity = 0.4;
+                updateGroup.ShowDialog();
+                parrentWindow.Opacity = 1;
+            }
+            else
+            {
+                //no => Show message box that must selected one User
+                MessageBox.Show("Must selected User to use this future", "Alert!", MessageBoxButton.OK);
+            }
         }
 
         private void ShowDeleteWindow(object obj)

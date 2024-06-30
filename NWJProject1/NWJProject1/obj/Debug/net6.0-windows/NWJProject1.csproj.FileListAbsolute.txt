@@ -80,3 +80,5 @@ D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\UserControls\GroupFormUC.baml
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\DeleteGroup.g.cs
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\DeleteGroup.baml
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\UpdateGroup.g.cs
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\UpdateGroup.baml

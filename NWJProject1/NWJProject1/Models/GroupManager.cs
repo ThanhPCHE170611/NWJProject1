@@ -72,5 +72,31 @@ namespace NWJProject1.Models
                 return false; 
             }
         }
+        public static void UpdateGroup(UserGroup group)
+        {
+            try
+            {
+                UserGroup groupInDb = context.UserGroups.Include(x => x.Users).FirstOrDefault(x => x.GroupId == group.GroupId);
+                UserGroup groupInList = Groups.FirstOrDefault(x => x.GroupId == group.GroupId);
+                
+                if (groupInDb == null)
+                {
+                    groupInDb = context.UserGroups.Include(x => x.Users).OrderBy(x => x.GroupId).LastOrDefault();
+                }
+                if (groupInList != null)
+                {
+                    groupInList.Status = group.Status;
+                    groupInList.GroupName = group.GroupName;
+                    groupInList.GroupDescription = group.GroupDescription;
+                }
+                groupInDb.Status = group.Status;
+                groupInDb.GroupName = group.GroupName;
+                groupInDb.GroupDescription = group.GroupDescription;
+                context.SaveChanges();
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error");
+            }
+        }
     }
 }
