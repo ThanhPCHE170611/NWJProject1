@@ -1,4 +1,5 @@
-﻿using NWJProject1.ViewModels;
+﻿using NWJProject1.Models;
+using NWJProject1.ViewModels.GroupViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,18 +14,18 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace NWJProject1.Views
+namespace NWJProject1.Views.GroupViews
 {
     /// <summary>
-    /// Interaction logic for AddUser.xaml
+    /// Interaction logic for DeleteGroup.xaml
     /// </summary>
-    public partial class AddUser : Window
+    public partial class DeleteGroup : Window
     {
-        public AddUser()
+        public DeleteGroup(UserGroup SelectedGroup)
         {
             InitializeComponent();
-            AddUserViewModel addUserViewModel = new AddUserViewModel();
-            DataContext = addUserViewModel;
+            DeleteGroupViewModel deleteGroupViewModel = new DeleteGroupViewModel(SelectedGroup);
+            this.DataContext = deleteGroupViewModel;
         }
     }
 }

@@ -3,6 +3,7 @@ using NWJProject1.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,9 @@ namespace NWJProject1.Models
             GroupId = x.GroupId,
             GroupName = x.Group.GroupName
         }).ToList());
+
+
+
 
         public static ObservableCollection<UserDTO> GetAllUsers()
         {
@@ -67,7 +71,7 @@ namespace NWJProject1.Models
                 {
                     userInDb = context.Users.OrderBy(x => x.UserId).LastOrDefault();
                     Users.Remove(user);
-                    context.Users.Remove(userInDb);
+                    context.Remove(userInDb);
                     context.SaveChanges();
                 }
             }
@@ -103,7 +107,6 @@ namespace NWJProject1.Models
                     userInDb.PhoneNumber = user.PhoneNumber;
                     userInDb.Status = user.Status;
                     userInDb.GroupId = user.GroupId;
-                    context.SaveChanges();
                 }
                 else
                 {
@@ -115,11 +118,29 @@ namespace NWJProject1.Models
                     userInDb.Status = user.Status;
                     userInDb.GroupId = user.GroupId;
                 }
+                context.SaveChanges();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error");
             }
+        }
+        public static void deleteRangeUser(ICollection<User> users)
+        {
+            foreach(var user in users.Select(user => new UserDTO
+            {
+                FullName = user.FullName,
+                Gender = (user.Gender == true ? "Male": "Female"),
+                Address = user.Address,
+                PhoneNumber = user.PhoneNumber,
+                Status = user.Status,
+                GroupId = user.GroupId,
+            }))
+            {
+                Users.Remove(user);
+            }
+            context.RemoveRange(users);
+            context.SaveChanges();
         }
     }
 }

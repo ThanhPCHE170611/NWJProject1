@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\NWJProject1\NWJProject1\NWJProject1\App.xaml
-7-1240370627
+12844216770
 
-20-1713292255
+271745897996
 220-373403591
-MainWindow.xaml;Views\AddUser.xaml;Views\DeleteUser.xaml;Views\Styles\FormStyle.xaml;Views\UpdateUser.xaml;Views\UserControls\UserFormUC.xaml;Views\UserHomePage.xaml;
+MainWindow.xaml;Views\GroupViews\AddGroup.xaml;Views\GroupViews\DeleteGroup.xaml;Views\GroupViews\GroupHomePage.xaml;Views\Styles\FormStyle.xaml;Views\Styles\HomePageStyle.xaml;Views\UserControls\GroupFormUC.xaml;Views\UserControls\UserFormUC.xaml;Views\UserViews\AddUser.xaml;Views\UserViews\DeleteUser.xaml;Views\UserViews\UpdateUser.xaml;Views\UserViews\UserHomePage.xaml;
 
 False
 

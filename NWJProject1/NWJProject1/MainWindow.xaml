@@ -14,6 +14,6 @@
         <Button x:Name="btnUser" Content="UserHomePage" HorizontalAlignment="Center" VerticalAlignment="Center"
                 FontSize="16" Height="60" Click="btnUser_Click"/>
         <Button x:Name="btnGroup" Content="GroupHomePage" HorizontalAlignment="Center" VerticalAlignment="Center"
-        FontSize="16" Height="60" Grid.Column="1"/>
+        FontSize="16" Height="60" Grid.Column="1" Click="btnGroup_Click"/>
     </Grid>
 </Window>

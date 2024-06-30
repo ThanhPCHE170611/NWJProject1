@@ -1,0 +1,41 @@
+﻿<Window x:Class="NWJProject1.Views.GroupViews.GroupHomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NWJProject1.Views.GroupViews"
+        mc:Ignorable="d"
+        Title="GroupHomePage" Height="650" Width="1000"
+        WindowStartupLocation="CenterScreen"
+        Name="grouphome">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/NWJProject1;component/Views/Styles/HomePageStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid Background="#333333">
+        <Grid Background="Transparent" Grid.Row="1" Margin="25,40,25,15">
+            <TextBox Name="FilterTextBox" TextChanged="FilterTextBox_TextChanged"
+             />
+            <Button CommandParameter="{x:Reference Name=grouphome}" 
+            Command="{Binding ShowWindowCommand}" Content="Add Group" 
+            Margin="25" />
+            <Button Content="Delete Group" Margin="0,25,147,0" 
+            Command="{Binding ShowDeleteWCommand}" CommandParameter="{x:Reference Name=grouphome}"/>
+            <Button Content="Update Group" Margin="0,25,272,0" 
+            Command="{Binding ShowUpdateWCommand}" CommandParameter="{x:Reference Name=grouphome}"/>
+            <ListView Name="GroupList" ItemsSource="{Binding Groups}" Margin="25,70,25,25" SelectedItem="{Binding SelectedGroup}">
+                <ListView.View>
+                    <GridView >
+                        <GridViewColumn Header="GroupName"   DisplayMemberBinding="{Binding GroupName}"/>
+                        <GridViewColumn Header="GroupDescription"  Width="200" DisplayMemberBinding="{Binding GroupDescription}"/>
+                        <GridViewColumn Header="Status"  Width="100" DisplayMemberBinding="{Binding Status}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+    </Grid>
+ </Window>
+

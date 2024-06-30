@@ -3,12 +3,13 @@ using NWJProject1.DTOs;
 using NWJProject1.Models;
 using NWJProject1.Views;
 using System.Collections.ObjectModel;
+using System.Collections.Specialized;
 using System.Windows;
 using System.Windows.Input;
 
 namespace NWJProject1.ViewModels
 {
-    public class UserHomePageViewModel
+    public class UserHomePageViewModel  
     {
         public ObservableCollection<UserDTO> Users {get; set; }
 
@@ -24,6 +25,7 @@ namespace NWJProject1.ViewModels
             ShowDeleteWCommand = new RelayCommand(ShowDeleteWindow, CanShowWindow);
             ShowUpdateWCommand = new RelayCommand(ShowUpdateWindow, CanShowWindow);
         }
+
 
         private void ShowDeleteWindow(object obj)
         {

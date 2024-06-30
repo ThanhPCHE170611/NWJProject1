@@ -43,7 +43,7 @@ namespace NWJProject1.ViewModels
         }
         private void DeleteUser(object obj)
         {
-            UserManager.DeleteUser(selectedUser);
+             UserManager.DeleteUser(selectedUser);
             var alertReslut = MessageBox.Show("Delete User success!", "Alert!", MessageBoxButton.OK);
             if (alertReslut == MessageBoxResult.OK)
             {
