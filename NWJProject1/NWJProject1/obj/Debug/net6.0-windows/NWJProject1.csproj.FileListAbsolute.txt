@@ -41,11 +41,9 @@ D:\NWJProject1\NWJProject1\NWJProject1\bin\Debug\net6.0-windows\runtimes\win-x64
 D:\NWJProject1\NWJProject1\NWJProject1\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\NWJProject1\NWJProject1\NWJProject1\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\NWJProject1.csproj.AssemblyReference.cache
-D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\MainWindow.g.cs
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\App.g.cs
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\NWJProject1_MarkupCompile.cache
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\NWJProject1_MarkupCompile.lref
-D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\MainWindow.baml
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\NWJProject1.g.resources
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\NWJProject1.GeneratedMSBuildEditorConfig.editorconfig
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\NWJProject1.AssemblyInfoInputs.cache
@@ -82,3 +80,5 @@ D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\DeleteGroup.baml
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\UpdateGroup.g.cs
 D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\GroupViews\UpdateGroup.baml
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\MainWindow.g.cs
+D:\NWJProject1\NWJProject1\NWJProject1\obj\Debug\net6.0-windows\Views\MainWindow.baml
