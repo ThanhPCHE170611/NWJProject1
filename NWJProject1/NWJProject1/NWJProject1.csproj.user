@@ -7,10 +7,34 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="Views\AddUser.xaml.cs">
+    <Compile Update="Views\GroupViews\AddGroup.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UserHomePage.xaml.cs">
+    <Compile Update="Views\GroupViews\DeleteGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GroupViews\GroupHomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\GroupViews\UpdateGroup.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\GroupFormUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\AddUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\DeleteUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\UpdateUser.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserControls\UserFormUC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\UserViews\UserHomePage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +42,40 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\AddUser.xaml">
+    <Page Update="Views\GroupViews\AddGroup.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\UserHomePage.xaml">
+    <Page Update="Views\GroupViews\DeleteGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GroupViews\GroupHomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\GroupViews\UpdateGroup.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Styles\HomePageStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\GroupFormUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserViews\AddUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserViews\DeleteUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\Styles\FormStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserViews\UpdateUser.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserControls\UserFormUC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\UserViews\UserHomePage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -1,4 +1,5 @@
-﻿using NWJProject1.ViewModels;
+﻿using NWJProject1.DTOs;
+using NWJProject1.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,15 +17,15 @@ using System.Windows.Shapes;
 namespace NWJProject1.Views
 {
     /// <summary>
-    /// Interaction logic for AddUser.xaml
+    /// Interaction logic for DeleteUser.xaml
     /// </summary>
-    public partial class AddUser : Window
+    public partial class DeleteUser : Window
     {
-        public AddUser()
+        public DeleteUser(UserDTO SelectedUser)
         {
             InitializeComponent();
-            AddUserViewModel addUserViewModel = new AddUserViewModel();
-            DataContext = addUserViewModel;
+            DeleteUserViewModel deleteUserViewModel = new DeleteUserViewModel(SelectedUser);
+            DataContext = deleteUserViewModel;
         }
     }
 }

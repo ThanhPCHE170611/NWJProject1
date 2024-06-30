@@ -1,4 +1,5 @@
-﻿using NWJProject1.ViewModels;
+﻿using NWJProject1.DTOs;
+using NWJProject1.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,20 +17,15 @@ using System.Windows.Shapes;
 namespace NWJProject1.Views
 {
     /// <summary>
-    /// Interaction logic for UserHomePage.xaml
+    /// Interaction logic for UpdateUser.xaml
     /// </summary>
-    public partial class UserHomePage : Window
+    public partial class UpdateUser : Window
     {
-        public UserHomePage()
+        public UpdateUser(UserDTO SelectedUser)
         {
             InitializeComponent();
-            UserHomePageViewModel userHomePageViewModel = new UserHomePageViewModel();
-            this.DataContext = userHomePageViewModel;
-        }
-
-        private void FilterTextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            UpdateUserViewModel updateUserViewModel = new UpdateUserViewModel(SelectedUser);
+            DataContext = updateUserViewModel;
         }
     }
 }

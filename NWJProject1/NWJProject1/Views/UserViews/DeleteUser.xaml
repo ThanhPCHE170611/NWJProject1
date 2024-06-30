@@ -1,0 +1,14 @@
+﻿<Window x:Class="NWJProject1.Views.DeleteUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NWJProject1.Views"
+        mc:Ignorable="d"
+        xmlns:userfomrcs="clr-namespace:NWJProject1.Views.UserControls"
+        Title="DeleteUser" Height="450" Width="750" Background="#333333" 
+        Name="deleteWindow" WindowStyle="ToolWindow">
+    <Grid>
+        <userfomrcs:UserFormUC ButtonContent="Delete" ButtonCommand="{Binding DeleteUserCommand}" ButtonCommandParameter="{Binding ElementName=deleteWindow}" IsEditMode="False"/>
+    </Grid>
+</Window>

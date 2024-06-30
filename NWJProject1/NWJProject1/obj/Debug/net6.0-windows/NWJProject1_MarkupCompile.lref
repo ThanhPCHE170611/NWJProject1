@@ -1,6 +1,13 @@
 ﻿
 
 FD:\NWJProject1\NWJProject1\NWJProject1\MainWindow.xaml;;
-FD:\NWJProject1\NWJProject1\NWJProject1\Views\AddUser.xaml;;
-FD:\NWJProject1\NWJProject1\NWJProject1\Views\UserHomePage.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\GroupViews\AddGroup.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\GroupViews\DeleteGroup.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\GroupViews\GroupHomePage.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\UserControls\GroupFormUC.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\UserControls\UserFormUC.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\UserViews\AddUser.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\UserViews\DeleteUser.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\UserViews\UpdateUser.xaml;;
+FD:\NWJProject1\NWJProject1\NWJProject1\Views\GroupViews\UpdateGroup.xaml;;
 
